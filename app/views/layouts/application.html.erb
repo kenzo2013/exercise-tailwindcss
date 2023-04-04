@@ -13,6 +13,15 @@
 
   <body class="bg-gray-100">
     <main class="">
+      <h1 class="text-3xl font-bold underline pt-6  text-center items-center justify-center px-10">
+        Tailwind CSS exercise
+      </h1>
+      <nav class="text-center p-5">
+        <%= link_to 'Blog', blogs_path, class: "mx-2 text-lg" %>
+        <%= link_to 'Content Section', content_sections_path, class: "mx-2 text-lg" %>
+        <%= link_to 'CTA', cta_path, class: "mx-2 text-lg" %>
+        <%= link_to 'EcommerceList', ecommercelist_index_path, class: "mx-2 text-lg" %>
+      </nav>
       <%= yield %>
     </main>
   </body>

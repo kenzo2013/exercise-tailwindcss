@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :blogs, only: :index
   resources :content_sections, only: :index
   resources :cta, only: :index
+  resources :ecommercelist, only: :index
 end
