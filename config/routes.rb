@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/index'
 
   root "homes#index"
 
@@ -9,5 +10,6 @@ Rails.application.routes.draw do
   resources :newsletters, only: :index
   resources :pricings, only: :index
   resources :signups, only: :index
+  resources :users, only: :index
 
 end
