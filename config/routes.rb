@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/index'
 
   root "homes#index"
 
@@ -11,5 +10,6 @@ Rails.application.routes.draw do
   resources :pricings, only: :index
   resources :signups, only: :index
   resources :users, only: :index
+  resources :landing_pages, only: :index
 
 end
